@@ -1,0 +1,27 @@
+<table class="table">
+	<caption>Liste des Utilisateurs</caption>
+	<thead>
+	  <tr>
+		<th scope="col">#</th>
+		<th scope="col">Username</th>
+		<th scope="col">Nom Complet</th>
+		<th scope="col">Propriétaire</th>
+		<th scope="col">Raison Social</th>
+		<th scope="col">Ninea</th>
+		<th scope="col">Adresse</th>
+
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr *ngFor="let us of user">
+		<th scope="row">{{ us.id }}</th>
+		<td>{{ us.username }}</td>
+		<td>{{ us.nomComplet }}</td>
+		<td>{{ us.proprietaire }}</td>
+		<td>{{us.partenaire.raisonSocial}}</td>
+		<td>{{us.partenaire.ninea}}</td>
+		<td>{{us.partenaire.adresse}}</td>
+	  </tr>
+	 
+	</tbody>
+  </table>

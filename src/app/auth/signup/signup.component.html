@@ -1,0 +1,39 @@
+<div class="main">
+
+  <section class="signup">
+
+      <div class="container">
+          <div class="signup-content">
+              <form method="POST" id="signup-form" class="form" enctype="multipart/form-data">
+                  <h2 class="form-title">Creer un compte</h2>
+                  <div class="form-group">
+                      <input [(ngModel)]="loginUserData.username" type="text" class="form-input" name="name" id="name" placeholder="Username"/>
+                  </div>
+                  <div class="form-group">
+                    <input [(ngModel)]="loginUserData.password" type="text" class="form-input" name="name" id="name" placeholder="Un mot de passe"/>
+                </div>
+                 <div class="form-group">
+                    <input [(ngModel)]="loginUserData.nomComplet" type="text" class="form-input" name="name" id="name" placeholder="Nom complet"/>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="loginUserData.imageFile" type="file" class="form-input" name="file" id="name" />
+                </div>
+               
+                  <div class="form-group">
+                      <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                      <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                  </div>
+                  <div class="form-group">
+                    <button (click)="loginUser()" class="form-submit"  id="submit" type="submit" name="submit">Enregistrer</button>                  </div>
+              </form>
+              <p class="loginhere">
+                  Have already an account ? <a href="signin.component.html" class="loginhere-link">Login here</a>
+              </p>
+          </div>
+      </div>
+  </section>
+
+</div>
+
+
+

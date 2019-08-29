@@ -1,0 +1,30 @@
+<div class="main">
+
+    <section class="signup">
+
+        <div class="container"> 
+            <div class="signup-content">
+                <form method="POST" #f="ngForm" >
+                    <h2 class="form-title">Envoi Argent</h2>
+                    <div class="form-group">
+                        <input [(ngModel)]="loginUserData.coderetrait" name="name" id="name" type="number" class="form-input"   placeholder="Entrez le code transfert"/>
+                    <br>
+                    <button (click)="loginUser()" class="form-submit"  id="submit" type="submit" name="submit">Envoyer</button>
+                    <br>
+                    <div class="card" style="width: 50%;"  *ngIf="nomcomplet()!=''">
+                       
+                        <div class="card-body">
+                            <br><br>
+                          <p class="card-text">Nom complet du receveur : {{ nomcompletreceveur }}</p>
+                          <p class="card-text">Carte d'identité du Receveur : {{ INE }}</p> <br>
+                         
+                          <button href="#" class="btn btn-success" (click)="finalisons()" >Finaliser le transfert</button>
+                        </div>
+                      </div>
+                </div>
+                   </form>
+                   <ul></ul>
+                 </div> 
+                </div>
+             </section> 
+            </div>
