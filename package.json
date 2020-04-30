@@ -28,7 +28,7 @@
     "core-js": "^2.5.4",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mdbootstrap": "^4.8.8",
     "ng-uikit": "^0.1.6",
     "rxjs": "^6.3.3",
